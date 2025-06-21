@@ -52,26 +52,3 @@ def debug(cls):
             setattr(cls, name, log_method_call(method))
     return cls
 
-# 使用示例
-@debug
-class Calculator:
-    def add(self, a, b):
-        return a + b
-    def sub(self, a, b):
-        return a - b
-    def mul(self, a, b):
-        return a * b
-    def div(self, a, b):
-        return a / b
-
-if __name__ == '__main__':
-    calculator = Calculator()
-    calculator.add(1, 2)
-    # 测试
-    calc = Calculator()
-    calc.add(3, 5)
-    calculator.sub(5, 2)
-    calculator.mul(5, 2)
-    calculator.div(5, 2)
-    calculator.sub(5, 2)
-    calculator.mul(5, 2)
