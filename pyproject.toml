@@ -16,8 +16,11 @@ Homepage = "https://github.com/Talbot3/py3-debug"
 Issues = "https://github.com/Talbot3/py3-debug/issues"   
 
 [build-system]
-requires = ["setuptools>=46.1.0"]
+requires = ["setuptools>=46.1.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
-where = ["debug"]
+where = ["src"]
+
+[tool.setuptools]
+package-dir = {"debug" = "src/debug"}
