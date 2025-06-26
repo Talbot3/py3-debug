@@ -3,16 +3,9 @@ import inspect
 import logging
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
-
-# 创建控制台 handler
 ch = logging.StreamHandler()
-ch.setLevel(logging.DEBUG)
-# 添加到 logger
 logger.addHandler(ch)
 # 添加格式：包含 pathname 和 lineno（用于 PyCharm 点击跳转）
-
-# 添加到 logger
-logger.addHandler(ch)
 
 def log_method_call(func):
     @functools.wraps(func)
