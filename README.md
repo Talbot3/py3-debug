@@ -3,6 +3,11 @@
 
 ![show](https://github.com/Talbot3/py3-debug/blob/main/截屏2025-06-21%2018.43.54.png)
 
+## 安装
+```bash
+pip install py3-debug
+```
+## 使用
 ```python
 import debug
 # 使用示例
